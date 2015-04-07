@@ -12,6 +12,8 @@
 		46E0FBB51AD448ED008BAAE4 /* weiboModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0FBB41AD448ED008BAAE4 /* weiboModelTests.swift */; };
 		46E0FBCB1AD449C8008BAAE4 /* OAuth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E0FBC71AD449C8008BAAE4 /* OAuth.storyboard */; };
 		46E0FBCC1AD449C8008BAAE4 /* OAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0FBC81AD449C8008BAAE4 /* OAuthVC.swift */; };
+		46E0FBCD1AD44AF4008BAAE4 /* OAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0FBC81AD449C8008BAAE4 /* OAuthVC.swift */; };
+		46E0FBCE1AD44AF8008BAAE4 /* OAuth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E0FBC71AD449C8008BAAE4 /* OAuth.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -286,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E0FBCE1AD44AF8008BAAE4 /* OAuth.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E0FBCD1AD44AF4008BAAE4 /* OAuthVC.swift in Sources */,
 				46E0FBB51AD448ED008BAAE4 /* weiboModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
