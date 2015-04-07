@@ -8,7 +8,7 @@
 
 import UIKit
 
-//import simpleNetWork
+import WPNetwork
 
 class OAuthVC: UIViewController {
 
@@ -48,8 +48,6 @@ extension OAuthVC:UIWebViewDelegate {
             
             p_sendRequestWithCode(code)
         }
-        // TODO:ffd
-        // MARK: - df
         
         return result.load
     }
@@ -84,31 +82,17 @@ extension OAuthVC:UIWebViewDelegate {
     
     func p_sendRequestWithCode(code: String) {
         let urlString = "https://api.weibo.com/oauth2/access_token"
-        let url :NSURL? = NSURL(string: urlString)
-        var req = NSMutableURLRequest(URL: url!)
         
-        req.HTTPMethod = "POST"
-        var bodyStr = "client_id=1476495812&client_secret=ccb851ded8dd142182c7820c014000ae&grant_type=authorization_code&code=\(code)&redirect_uri=http://www.itheima.com"
+        let para = ["client_id":"1476495812",
+        "client_secret":"ccb851ded8dd142182c7820c014000ae",
+        "grant_type":"authorization_code",
+        "code":code,
+        "redirect_uri":"http://www.itheima.com"]
         
-        req.HTTPBody = bodyStr.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)
-        
-        NSURLSession.sharedSession().dataTaskWithRequest(req as NSURLRequest, completionHandler: { (data, _, _) -> Void in
+        WPNetwork_swift().requestJSON(.POST, urlString, para) { (result, error) -> () in
+            println(result)
             
-            let dict: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.allZeros, error: nil)
-            
-//            println(dict)
-//            SVProgressHUD.show()
-            
-//            Optional({
-//                "access_token" = "2.00EnziDGaAOvbB1dc04be270kKIr_B";
-//                "expires_in" = 157679999;
-//                "remind_in" = 157679999;
-//                uid = 5551849958;
-//            })
-            
-        }).resume()
-        
-    
+        }
     }
 
 }

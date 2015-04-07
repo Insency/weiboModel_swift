@@ -14,6 +14,9 @@
 		46E0FBCC1AD449C8008BAAE4 /* OAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0FBC81AD449C8008BAAE4 /* OAuthVC.swift */; };
 		46E0FBCD1AD44AF4008BAAE4 /* OAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0FBC81AD449C8008BAAE4 /* OAuthVC.swift */; };
 		46E0FBCE1AD44AF8008BAAE4 /* OAuth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E0FBC71AD449C8008BAAE4 /* OAuth.storyboard */; };
+		46E0FBFF1AD44D01008BAAE4 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E0FBFB1AD44D01008BAAE4 /* SVIndefiniteAnimatedView.m */; };
+		46E0FC001AD44D01008BAAE4 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46E0FBFC1AD44D01008BAAE4 /* SVProgressHUD.bundle */; };
+		46E0FC011AD44D01008BAAE4 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E0FBFE1AD44D01008BAAE4 /* SVProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,11 @@
 		46E0FBB41AD448ED008BAAE4 /* weiboModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weiboModelTests.swift; sourceTree = "<group>"; };
 		46E0FBC71AD449C8008BAAE4 /* OAuth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OAuth.storyboard; sourceTree = "<group>"; };
 		46E0FBC81AD449C8008BAAE4 /* OAuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthVC.swift; sourceTree = "<group>"; };
+		46E0FBFA1AD44D01008BAAE4 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		46E0FBFB1AD44D01008BAAE4 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		46E0FBFC1AD44D01008BAAE4 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		46E0FBFD1AD44D01008BAAE4 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		46E0FBFE1AD44D01008BAAE4 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,8 +203,21 @@
 		46E0FBCA1AD449C8008BAAE4 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				46E0FBF91AD44D01008BAAE4 /* SVProgressHUD */,
 			);
 			path = Libs;
+			sourceTree = "<group>";
+		};
+		46E0FBF91AD44D01008BAAE4 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				46E0FBFA1AD44D01008BAAE4 /* SVIndefiniteAnimatedView.h */,
+				46E0FBFB1AD44D01008BAAE4 /* SVIndefiniteAnimatedView.m */,
+				46E0FBFC1AD44D01008BAAE4 /* SVProgressHUD.bundle */,
+				46E0FBFD1AD44D01008BAAE4 /* SVProgressHUD.h */,
+				46E0FBFE1AD44D01008BAAE4 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46E0FBCB1AD449C8008BAAE4 /* OAuth.storyboard in Resources */,
+				46E0FC001AD44D01008BAAE4 /* SVProgressHUD.bundle in Resources */,
 				46E0FBA61AD448ED008BAAE4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +322,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				46E0FBCC1AD449C8008BAAE4 /* OAuthVC.swift in Sources */,
+				46E0FC011AD44D01008BAAE4 /* SVProgressHUD.m in Sources */,
 				46E0FB9F1AD448ED008BAAE4 /* AppDelegate.swift in Sources */,
+				46E0FBFF1AD44D01008BAAE4 /* SVIndefiniteAnimatedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
