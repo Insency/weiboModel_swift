@@ -28,7 +28,12 @@ public class WPNetwork_swift {
     }()
     
     
-    
+    ///  创建返回数据为 JSON 的网络回话并执行
+    ///
+    ///  :param: method     网络请求的请求方法
+    ///  :param: urlString  请求的 URL 的字符串
+    ///  :param: parameter  需要传递的参数字典
+    ///  :param: completion 完成回调
     public func requestJSON(method: HTTPMethod, _ urlString: String, _ parameter: [String: String]?,completion: Completion) {
         
         if let request = requestInfo(method, urlString, parameter) {

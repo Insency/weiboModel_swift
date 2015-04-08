@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4684913B1AD501940074F144 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4684913A1AD501940074F144 /* NetworkManager.swift */; };
+		4684913D1AD502CB0074F144 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4684913C1AD502CB0074F144 /* NetworkManagerTests.swift */; };
+		4684913E1AD503970074F144 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4684913A1AD501940074F144 /* NetworkManager.swift */; };
 		46E0FB9F1AD448ED008BAAE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0FB9E1AD448ED008BAAE4 /* AppDelegate.swift */; };
 		46E0FBA61AD448ED008BAAE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E0FBA51AD448ED008BAAE4 /* Images.xcassets */; };
 		46E0FBB51AD448ED008BAAE4 /* weiboModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0FBB41AD448ED008BAAE4 /* weiboModelTests.swift */; };
@@ -30,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4684913A1AD501940074F144 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4684913C1AD502CB0074F144 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		468491401AD51A8F0074F144 /* Swift_OC_Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swift_OC_Bridge.h; sourceTree = "<group>"; };
 		46E0FB991AD448ED008BAAE4 /* weiboModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weiboModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E0FB9D1AD448ED008BAAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46E0FB9E1AD448ED008BAAE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +104,7 @@
 			children = (
 				46E0FBA51AD448ED008BAAE4 /* Images.xcassets */,
 				46E0FB9D1AD448ED008BAAE4 /* Info.plist */,
+				468491401AD51A8F0074F144 /* Swift_OC_Bridge.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -106,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				46E0FBB41AD448ED008BAAE4 /* weiboModelTests.swift */,
+				4684913C1AD502CB0074F144 /* NetworkManagerTests.swift */,
 				46E0FBB21AD448ED008BAAE4 /* Supporting Files */,
 			);
 			path = weiboModelTests;
@@ -139,6 +147,7 @@
 		46E0FBC01AD449C8008BAAE4 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				4684913A1AD501940074F144 /* NetworkManager.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -323,6 +332,7 @@
 			files = (
 				46E0FBCC1AD449C8008BAAE4 /* OAuthVC.swift in Sources */,
 				46E0FC011AD44D01008BAAE4 /* SVProgressHUD.m in Sources */,
+				4684913B1AD501940074F144 /* NetworkManager.swift in Sources */,
 				46E0FB9F1AD448ED008BAAE4 /* AppDelegate.swift in Sources */,
 				46E0FBFF1AD44D01008BAAE4 /* SVIndefiniteAnimatedView.m in Sources */,
 			);
@@ -332,6 +342,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4684913E1AD503970074F144 /* NetworkManager.swift in Sources */,
+				4684913D1AD502CB0074F144 /* NetworkManagerTests.swift in Sources */,
 				46E0FBCD1AD44AF4008BAAE4 /* OAuthVC.swift in Sources */,
 				46E0FBB51AD448ED008BAAE4 /* weiboModelTests.swift in Sources */,
 			);
@@ -438,6 +450,7 @@
 				INFOPLIST_FILE = weiboModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = weiboModel/Swift_OC_Bridge.h;
 			};
 			name = Debug;
 		};
@@ -448,6 +461,7 @@
 				INFOPLIST_FILE = weiboModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = weiboModel/Swift_OC_Bridge.h;
 			};
 			name = Release;
 		};
@@ -466,6 +480,7 @@
 				INFOPLIST_FILE = weiboModelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = weiboModel/Swift_OC_Bridge.h;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/weiboModel.app/weiboModel";
 			};
 			name = Debug;
@@ -481,6 +496,7 @@
 				INFOPLIST_FILE = weiboModelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = weiboModel/Swift_OC_Bridge.h;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/weiboModel.app/weiboModel";
 			};
 			name = Release;
@@ -504,6 +520,7 @@
 				46E0FBBA1AD448ED008BAAE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46E0FBBB1AD448ED008BAAE4 /* Build configuration list for PBXNativeTarget "weiboModelTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +529,7 @@
 				46E0FBBD1AD448ED008BAAE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
