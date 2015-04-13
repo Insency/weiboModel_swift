@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		466D182D1ADA7C1D0060799A /* SwiftJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D81DD91ADA7727003CC230 /* SwiftJSONModel.swift */; };
+		466D182E1ADA7CC20060799A /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D81DD71ADA766A003CC230 /* AccessToken.swift */; };
 		4684913B1AD501940074F144 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4684913A1AD501940074F144 /* NetworkManager.swift */; };
 		4684913D1AD502CB0074F144 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4684913C1AD502CB0074F144 /* NetworkManagerTests.swift */; };
 		4684913E1AD503970074F144 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4684913A1AD501940074F144 /* NetworkManager.swift */; };
+		46D81DD81ADA766A003CC230 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D81DD71ADA766A003CC230 /* AccessToken.swift */; };
+		46D81DDA1ADA7727003CC230 /* SwiftJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D81DD91ADA7727003CC230 /* SwiftJSONModel.swift */; };
 		46E0FB9F1AD448ED008BAAE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0FB9E1AD448ED008BAAE4 /* AppDelegate.swift */; };
 		46E0FBA61AD448ED008BAAE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E0FBA51AD448ED008BAAE4 /* Images.xcassets */; };
 		46E0FBB51AD448ED008BAAE4 /* weiboModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0FBB41AD448ED008BAAE4 /* weiboModelTests.swift */; };
@@ -36,6 +40,8 @@
 		4684913A1AD501940074F144 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		4684913C1AD502CB0074F144 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		468491401AD51A8F0074F144 /* Swift_OC_Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swift_OC_Bridge.h; sourceTree = "<group>"; };
+		46D81DD71ADA766A003CC230 /* AccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		46D81DD91ADA7727003CC230 /* SwiftJSONModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftJSONModel.swift; sourceTree = "<group>"; };
 		46E0FB991AD448ED008BAAE4 /* weiboModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weiboModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E0FB9D1AD448ED008BAAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46E0FB9E1AD448ED008BAAE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +146,7 @@
 		46E0FBBF1AD449C8008BAAE4 /* BusinessModels */ = {
 			isa = PBXGroup;
 			children = (
+				46D81DD91ADA7727003CC230 /* SwiftJSONModel.swift */,
 			);
 			path = BusinessModels;
 			sourceTree = "<group>";
@@ -196,6 +203,7 @@
 		46E0FBC61AD449C8008BAAE4 /* OAuth */ = {
 			isa = PBXGroup;
 			children = (
+				46D81DD71ADA766A003CC230 /* AccessToken.swift */,
 				46E0FBC71AD449C8008BAAE4 /* OAuth.storyboard */,
 				46E0FBC81AD449C8008BAAE4 /* OAuthVC.swift */,
 			);
@@ -333,8 +341,10 @@
 				46E0FBCC1AD449C8008BAAE4 /* OAuthVC.swift in Sources */,
 				46E0FC011AD44D01008BAAE4 /* SVProgressHUD.m in Sources */,
 				4684913B1AD501940074F144 /* NetworkManager.swift in Sources */,
+				46D81DDA1ADA7727003CC230 /* SwiftJSONModel.swift in Sources */,
 				46E0FB9F1AD448ED008BAAE4 /* AppDelegate.swift in Sources */,
 				46E0FBFF1AD44D01008BAAE4 /* SVIndefiniteAnimatedView.m in Sources */,
+				46D81DD81ADA766A003CC230 /* AccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,8 +354,10 @@
 			files = (
 				4684913E1AD503970074F144 /* NetworkManager.swift in Sources */,
 				4684913D1AD502CB0074F144 /* NetworkManagerTests.swift in Sources */,
+				466D182D1ADA7C1D0060799A /* SwiftJSONModel.swift in Sources */,
 				46E0FBCD1AD44AF4008BAAE4 /* OAuthVC.swift in Sources */,
 				46E0FBB51AD448ED008BAAE4 /* weiboModelTests.swift in Sources */,
+				466D182E1ADA7CC20060799A /* AccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

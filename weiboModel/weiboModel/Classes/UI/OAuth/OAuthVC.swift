@@ -99,8 +99,13 @@ extension OAuthVC:UIWebViewDelegate {
         "code":code,
         "redirect_uri":"\(WB_Redirect_URL_String)"]
         
-        NetworkManager.sharedNetworkManager.requestJSON(.POST, urlString, para) { (result, error) -> () in
-            println(result)
+        NetworkManager.sharedNetworkManager.requestJSON(.POST, urlString, para) { (result, error) -> Void in
+            if result != nil{
+            
+                let accessToken = AccessToken(dict: result as! NSDictionary)
+                accessToken.saveAccessToken()
+                println(AccessToken.accessTokenPath())
+            }
             
         }
     }
